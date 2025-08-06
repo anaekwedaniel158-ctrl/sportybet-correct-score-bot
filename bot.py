@@ -26,7 +26,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         odds = float(text)
         scores = odds_map.get(odds, [])
         if scores:
-            reply = f"Possible correct scores for odds {odds}:
+            reply = f"Possible correct scores for odds {odds}:"
 " + "\n".join(scores)
         else:
             reply = "No matching correct scores found for this odds."
